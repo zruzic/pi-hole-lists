@@ -1,0 +1,66 @@
+# Croatian top media ad + tracker domains (Minimal safe blocklist)
+# Prepared for Pi-hole
+# Last updated: 2025-11-08
+
+# Index.hr
+adserver.index.hr
+metrics.index.hr
+stats.index.hr
+tracking.index.hr
+
+# Jutarnji.hr
+adserver.jutarnji.hr
+metrics.jutarnji.hr
+track.jutarnji.hr
+analytics.jutarnji.hr
+
+# Vecernji.hr
+adserver.vecernji.hr
+metrics.vecernji.hr
+track.vecernji.hr
+analytics.vecernji.hr
+
+# 24sata.hr
+adserver.ad.24sata.hr
+ads.24sata.hr
+metrics.24sata.hr
+tracking.24sata.hr
+
+# Net.hr
+adserver.net.hr
+ads.net.hr
+metrics.net.hr
+
+# Tportal.hr
+adserver.tportal.hr
+metrics.tportal.hr
+ads.tportal.hr
+
+# RTL.hr
+ads.rtl.hr
+metrics.rtl.hr
+tracking.rtl.hr
+
+# Telegram.hr
+adserver.telegram.hr
+ads.telegram.hr
+metrics.telegram.hr
+
+# N1info.hr
+ads.n1info.hr
+tracking.n1info.hr
+metrics.n1info.hr
+
+# Dnevnik.hr
+ads.dnevnik.hr
+metrics.dnevnik.hr
+tracking.dnevnik.hr
+
+# Common external trackers used by these portals
+googletagmanager.com
+googletagservices.com
+googleadservices.com
+pagead2.googlesyndication.com
+ad.doubleclick.net
+stats.g.doubleclick.net
+s0.2mdn.net
