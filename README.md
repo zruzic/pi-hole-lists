@@ -1,4 +1,4 @@
-# Croatia Media Ads – Pi‑hole Blocklist
+Note: this repository is designed to be used together with strong global lists# Croatia Media Ads – Pi‑hole Blocklist
 
 **Croatian top media ad + tracker domains (Minimal+ blocklist)**  
 Curated for Pi‑hole, with a focus on Croatian news / media portals.
@@ -33,6 +33,33 @@ real traffic from Croatian media sites.
 ## Blocklist URL
 
 You can add this list directly to Pi‑hole (or any compatible DNS sinkhole) as an adlist:
-
 ```text
 https://raw.githubusercontent.com/zruzic/pi-hole-lists/main/croatia-media-ads.txt
+
+```
+
+## Recommended base blocklists
+
+This list is meant to be a regional supplement, not your only protection.
+
+My current base setup looks roughly like this:
+
+Hagezi popup ads – focused on aggressive popups / redirects
+
+```text
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt
+
+```
+
+Hagezi TIF (Threat Intelligence Feeds) – malware / phishing / C2
+
+```text
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt
+
+```
+
+
+
+
+
+
