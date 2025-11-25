@@ -149,3 +149,101 @@ realtime-tentacles-production.b-cdn.net
 ebxcdn.com
 applets.ebxcdn.com
 thecrossnet.io
+
+# =========================
+# New: Regional / Local portals
+# =========================
+# Glas Istre
+ads.glasistre.hr
+metrics.glasistre.hr
+
+# Glas Slavonije
+ads.glas-slavonije.hr
+tracking.glas-slavonije.hr
+
+# Slobodna Dalmacija
+ads.slobodnadalmacija.hr
+metrics.slobodnadalmacija.hr
+adserver.slobodnadalmacija.hr
+
+# Novi list
+ads.novilist.hr
+analytics.novilist.hr
+
+# Istarski.hr
+ads.istarski.hr
+
+# Istra24.hr
+ads.istra24.hr
+
+# Dalmacija Danas
+ads.dalmacijadanas.hr
+
+# Dalmatinski Portal
+ads.dalmatinskiportal.hr
+
+# Zagreb.info
+ads.zagreb.info
+tracking.zagreb.info
+
+# Podravski list
+ads.podravski.hr
+
+# =========================
+# New: Business / Specialized news
+# =========================
+# Poslovni dnevnik
+ads.poslovni.hr
+metrics.poslovni.hr
+
+# Financije.hr
+ads.financije.hr
+analytics.financije.hr
+
+# Nacional.hr
+ads.nacional.hr
+tracking.nacional.hr
+
+# Direktno.hr
+ads.direktno.hr
+
+# Dnevno.hr
+ads.dnevno.hr
+metrics.dnevno.hr
+
+# Imperijal.net
+ads.imperijal.net
+
+# MAXportal.hr
+ads.maxportal.hr
+
+# Narod.hr
+ads.narod.hr
+
+# Teleskop.hr
+ads.teleskop.hr
+
+# =========================
+# New: Sports / Lifestyle / Other
+# =========================
+# Sportnet.hr
+ads.sportnet.hr
+
+# Gol.hr (sports, tied to Dnevnik)
+ads.gol.hr
+
+# Bitno.net (religious)
+ads.bitno.net
+metrics.bitno.net
+
+# HKM.hr (Catholic)
+ads.hkm.hr
+
+# Gloria.hr (women's magazine)
+ads.gloria.hr
+
+# Story.hr (celebrity)
+ads.story.hr
+
+# Journal.hr (lifestyle)
+ads.journal.hr
