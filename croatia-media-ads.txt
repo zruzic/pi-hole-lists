@@ -3,7 +3,7 @@
 # Last updated: 2025-11-25
 
 # =========================
-#  Index.hr
+# Index.hr
 # =========================
 adserver.index.hr
 metrics.index.hr
@@ -11,7 +11,7 @@ stats.index.hr
 tracking.index.hr
 
 # =========================
-#  Jutarnji.hr
+# Jutarnji.hr
 # =========================
 adserver.jutarnji.hr
 metrics.jutarnji.hr
@@ -19,7 +19,7 @@ track.jutarnji.hr
 analytics.jutarnji.hr
 
 # =========================
-#  Vecernji.hr
+# Vecernji.hr
 # =========================
 adserver.vecernji.hr
 metrics.vecernji.hr
@@ -27,7 +27,7 @@ track.vecernji.hr
 analytics.vecernji.hr
 
 # =========================
-#  24sata.hr
+# 24sata.hr
 # =========================
 adserver.ad.24sata.hr
 ads.24sata.hr
@@ -35,42 +35,42 @@ metrics.24sata.hr
 tracking.24sata.hr
 
 # =========================
-#  Net.hr
+# Net.hr
 # =========================
 adserver.net.hr
 ads.net.hr
 metrics.net.hr
 
 # =========================
-#  Tportal.hr
+# Tportal.hr
 # =========================
 adserver.tportal.hr
 ads.tportal.hr
 metrics.tportal.hr
 
 # =========================
-#  RTL.hr
+# RTL.hr
 # =========================
 ads.rtl.hr
 metrics.rtl.hr
 tracking.rtl.hr
 
 # =========================
-#  Telegram.hr
+# Telegram.hr
 # =========================
 adserver.telegram.hr
 ads.telegram.hr
 metrics.telegram.hr
 
 # =========================
-#  N1info.hr
+# N1info.hr
 # =========================
 ads.n1info.hr
 tracking.n1info.hr
 metrics.n1info.hr
 
 # =========================
-#  Dnevnik.hr (NovaTV)
+# Dnevnik.hr (NovaTV)
 # =========================
 ads.dnevnik.hr
 metrics.dnevnik.hr
@@ -81,7 +81,7 @@ bijelojaje-widget.dnevnik.hr
 bijelojaje.dnevnik.hr
 
 # =========================
-#  Google Ads / DoubleClick
+# Google Ads / DoubleClick
 # =========================
 pagead2.googlesyndication.com
 tpc.googlesyndication.com
@@ -99,7 +99,7 @@ ep1.adtrafficquality.google
 s0.2mdn.net
 
 # =========================
-#  Google Tag / Analytics
+# Google Tag / Analytics
 # =========================
 googletagmanager.com
 www.googletagmanager.com
@@ -110,10 +110,11 @@ ssl.google-analytics.com
 region1.analytics.google.com
 
 # =========================
-#  Other major ad platforms
+# Other major ad platforms
 # =========================
 g.ezoic.net
 a.teads.tv
+
 openx.net
 oajs.openx.net
 google-bidout-d.openx.net
@@ -122,13 +123,12 @@ adnxs.com
 smartadserver.com
 rubiconproject.com
 pubmatic.com
-openx.net
 contextweb.com
 serving-sys.com
 scorecardresearch.com
 
 # =========================
-#  Recommendation / content-exchange / engagement
+# Recommendation / content-exchange / engagement
 # =========================
 contentexchange.me
 analytics.contentexchange.me
