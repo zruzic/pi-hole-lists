@@ -1,66 +1,132 @@
 # Croatian top media ad + tracker domains (Minimal safe blocklist)
 # Prepared for Pi-hole
-# Last updated: 2025-11-08
+# Last updated: 2025-11-25
 
-# Index.hr
+# =========================
+#  Index.hr
+# =========================
 adserver.index.hr
 metrics.index.hr
 stats.index.hr
 tracking.index.hr
 
-# Jutarnji.hr
+# =========================
+#  Jutarnji.hr
+# =========================
 adserver.jutarnji.hr
 metrics.jutarnji.hr
 track.jutarnji.hr
 analytics.jutarnji.hr
 
-# Vecernji.hr
+# =========================
+#  Vecernji.hr
+# =========================
 adserver.vecernji.hr
 metrics.vecernji.hr
 track.vecernji.hr
 analytics.vecernji.hr
 
-# 24sata.hr
+# =========================
+#  24sata.hr
+# =========================
 adserver.ad.24sata.hr
 ads.24sata.hr
 metrics.24sata.hr
 tracking.24sata.hr
 
-# Net.hr
+# =========================
+#  Net.hr
+# =========================
 adserver.net.hr
 ads.net.hr
 metrics.net.hr
 
-# Tportal.hr
+# =========================
+#  Tportal.hr
+# =========================
 adserver.tportal.hr
-metrics.tportal.hr
 ads.tportal.hr
+metrics.tportal.hr
 
-# RTL.hr
+# =========================
+#  RTL.hr
+# =========================
 ads.rtl.hr
 metrics.rtl.hr
 tracking.rtl.hr
 
-# Telegram.hr
+# =========================
+#  Telegram.hr
+# =========================
 adserver.telegram.hr
 ads.telegram.hr
 metrics.telegram.hr
 
-# N1info.hr
+# =========================
+#  N1info.hr
+# =========================
 ads.n1info.hr
 tracking.n1info.hr
 metrics.n1info.hr
 
-# Dnevnik.hr
+# =========================
+#  Dnevnik.hr (NovaTV)
+# =========================
 ads.dnevnik.hr
 metrics.dnevnik.hr
 tracking.dnevnik.hr
 
-# Common external trackers used by these portals
-googletagmanager.com
-googletagservices.com
-googleadservices.com
+# =========================
+#  Common external trackers / ad services
+#  (used across many HR portals)
+# =========================
+
+# Google Ads / DoubleClick
 pagead2.googlesyndication.com
+tpc.googlesyndication.com
+googlesyndication.com
+googleadservices.com
 ad.doubleclick.net
+adclick.g.doubleclick.net
+googleads.g.doubleclick.net
+g.doubleclick.net
 stats.g.doubleclick.net
 s0.2mdn.net
+
+# Google Tag / Analytics
+googletagmanager.com
+www.googletagmanager.com
+googletagservices.com
+google-analytics.com
+www.google-analytics.com
+ssl.google-analytics.com
+
+# Gemius (čest u regiji)
+gemius.pl
+hit.gemius.pl
+adocean.pl
+
+# Criteo
+criteo.com
+criteo.net
+
+# Adform
+adform.net
+track.adform.net
+ads.adform.net
+
+# Taboola & Outbrain (native ads)
+taboola.com
+cdn.taboola.com
+outbrain.com
+widgets.outbrain.com
+
+# Ostali veliki ad-exchange / tracking servisi (minimalni skup)
+adnxs.com
+smartadserver.com
+rubiconproject.com
+pubmatic.com
+openx.net
+contextweb.com
+serving-sys.com
+scorecardresearch.com
