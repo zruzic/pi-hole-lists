@@ -1,4 +1,4 @@
-# Croatian top media ad + tracker domains (Minimal safe blocklist)
+# Croatian top media ad + tracker domains (Minimal+ blocklist)
 # Prepared for Pi-hole
 # Last updated: 2025-11-25
 
@@ -75,53 +75,49 @@ metrics.n1info.hr
 ads.dnevnik.hr
 metrics.dnevnik.hr
 tracking.dnevnik.hr
+adserver.dnevnik.hr
+widget.dnevnik.hr
+bijelojaje-widget.dnevnik.hr
+bijelojaje.dnevnik.hr
 
 # =========================
-#  Common external trackers / ad services
-#  (used across many HR portals)
+#  Google Ads / DoubleClick
 # =========================
-
-# Google Ads / DoubleClick
 pagead2.googlesyndication.com
 tpc.googlesyndication.com
 googlesyndication.com
 googleadservices.com
+www.googleadservices.com
+googleads.g.doubleclick.net
+pubads.g.doubleclick.net
+securepubads.g.doubleclick.net
 ad.doubleclick.net
 adclick.g.doubleclick.net
-googleads.g.doubleclick.net
 g.doubleclick.net
 stats.g.doubleclick.net
+ep1.adtrafficquality.google
 s0.2mdn.net
 
-# Google Tag / Analytics
+# =========================
+#  Google Tag / Analytics
+# =========================
 googletagmanager.com
 www.googletagmanager.com
 googletagservices.com
 google-analytics.com
 www.google-analytics.com
 ssl.google-analytics.com
+region1.analytics.google.com
 
-# Gemius (čest u regiji)
-gemius.pl
-hit.gemius.pl
-adocean.pl
+# =========================
+#  Other major ad platforms
+# =========================
+g.ezoic.net
+a.teads.tv
+openx.net
+oajs.openx.net
+google-bidout-d.openx.net
 
-# Criteo
-criteo.com
-criteo.net
-
-# Adform
-adform.net
-track.adform.net
-ads.adform.net
-
-# Taboola & Outbrain (native ads)
-taboola.com
-cdn.taboola.com
-outbrain.com
-widgets.outbrain.com
-
-# Ostali veliki ad-exchange / tracking servisi (minimalni skup)
 adnxs.com
 smartadserver.com
 rubiconproject.com
@@ -130,3 +126,26 @@ openx.net
 contextweb.com
 serving-sys.com
 scorecardresearch.com
+
+# =========================
+#  Recommendation / content-exchange / engagement
+# =========================
+contentexchange.me
+analytics.contentexchange.me
+adria.contentexchange.me
+ughr.contentexchange.me
+
+html-load.com
+fb.html-load.com
+assets.dictivatted-foothers.cloud
+
+upscore.com
+hl.upscore.com
+files.upscore.com
+hit-pool.upscore.com
+positions.upscore.com
+
+realtime-tentacles-production.b-cdn.net
+ebxcdn.com
+applets.ebxcdn.com
+thecrossnet.io
