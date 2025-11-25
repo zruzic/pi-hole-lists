@@ -35,9 +35,8 @@ real traffic from Croatian media sites.
 You can add this list directly to Pi‑hole (or any compatible DNS sinkhole) as an adlist:
 ```text
 https://raw.githubusercontent.com/zruzic/pi-hole-lists/main/croatia-media-ads.txt
-
 ```
-
+---
 ## Recommended base blocklists
 
 This list is meant to be a regional supplement, not your only protection.
@@ -48,14 +47,12 @@ Hagezi popup ads – focused on aggressive popups / redirects
 
 ```text
 https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt
-
 ```
 
 Hagezi TIF (Threat Intelligence Feeds) – malware / phishing / C2
 
 ```text
 https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt
-
 ```
 
 
