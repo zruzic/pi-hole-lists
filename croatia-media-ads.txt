@@ -96,10 +96,12 @@ google-analytics.com
 www.google-analytics.com
 ssl.google-analytics.com
 region1.analytics.google.com
+region1.google-analytics.com
 # =========================
 # Other major ad platforms
 # =========================
 g.ezoic.net
+www.ezojs.com
 a.teads.tv
 openx.net
 oajs.openx.net
@@ -127,7 +129,18 @@ spotlight.offerista.com
 media.marktjagd.com
 middleware.marktjagd.de
 widget.marktjagd.de
-www.ezojs.com
+cat.fr3.eu.criteo.com
+client-side-metrics.eu.criteo.net
+imageproxy.eu.criteo.net
+rtb.fr3.eu.criteo.com
+static.criteo.net
+widget.fr3.eu.criteo.com
+gdehr.hit.gemius.pl
+hrgde.adocean.pl
+ls.hit.gemius.pl
+pi.smartocto.com
+ingestion.smartocto.com
+tentacles.smartocto.com
 # =========================
 # Recommendation / content-exchange / engagement
 # =========================
@@ -147,7 +160,7 @@ ebxcdn.com
 applets.ebxcdn.com
 thecrossnet.io
 # =========================
-# New: Regional / Local portals
+# Regional / Local portals
 # =========================
 # Glas Istre
 ads.glasistre.hr
@@ -176,7 +189,7 @@ tracking.zagreb.info
 # Podravski list
 ads.podravski.hr
 # =========================
-# New: Business / Specialized news
+# Business / Specialized news
 # =========================
 # Poslovni dnevnik
 ads.poslovni.hr
@@ -201,7 +214,7 @@ ads.narod.hr
 # Teleskop.hr
 ads.teleskop.hr
 # =========================
-# New: Sports / Lifestyle / Other
+# Sports / Lifestyle / Other
 # =========================
 # Sportnet.hr
 ads.sportnet.hr
