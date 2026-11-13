@@ -1,62 +1,93 @@
-Note: this repository is designed to be used together with strong global lists# Croatia Media Ads – Pi‑hole Blocklist
+# Croatia Media Ads – Pi‑hole Blocklist
+
+[![Blocklist](https://img.shields.io/badge/Blocklist-Active-brightgreen.svg)](#blocklist-url)
+[![Focus](https://img.shields.io/badge/Focus-Croatian%20Media-blue.svg)](#what-this-list-targets)
+[![Format](https://img.shields.io/badge/Format-Plain%20Domains-orange.svg)](#blocklist-url)
+
+> [!NOTE]
+> This repository is a targeted regional blocklist designed to be used alongside high-quality global blocklists (such as HaGeZi, StevenBlack, and Firebog).
 
 **Croatian top media ad + tracker domains (Minimal+ blocklist)**  
-Curated for Pi‑hole, with a focus on Croatian news / media portals.
+Curated specifically for Pi‑hole, AdGuard Home, and DNS sinkholes with a dedicated focus on Croatian news and media portals.
 
-This list is opinionated and tuned for a **home network in Croatia** – the goal is to:
-- aggressively reduce display / video / popup ads and tracking on the biggest Croatian portals
-- keep sites generally functional (logins, comments, paywalls where needed)
-- complement, not replace, high‑quality global blocklists (Hagezi, OISD, StevenBlack, …)
+This list is opinionated and tuned for a **home network in Croatia**:
+- **Aggressively blocks** display banners, outstream video ads, wallpaper takeovers, and audience telemetry across major Croatian portals.
+- **Maintains functionality**: Preserves user logins, comments, video players, and paywall/subscription flows.
+- **Audited against real traffic**: Every domain in this list is actively verified against real network query logs.
 
 ---
 
-## What this list targets
+## What This List Targets
 
-The list focuses on:
+### 1. Major Croatian Portals & Subdomains
+- **National Portals**: `index.hr`, `jutarnji.hr`, `vecernji.hr`, `24sata.hr`, `net.hr`, `tportal.hr`, `rtl.hr`, `telegram.hr`, `n1info.hr`, `dnevnik.hr` (NovaTV).
+- **Regional & Local Portals**: `slobodnadalmacija.hr`, `novilist.hr`, `glasistre.hr`, `glas-slavonije.hr`, `zagreb.info`, `dalmacijadanas.hr`, `dalmatinskiportal.hr`, etc.
+- **First-Party Ad / Tracking Subdomains**: e.g., `adserver.index.hr`, `metrics.jutarnji.hr`, `ads.dnevnik.hr`, `videoads.dnevnik.hr`, `adserver.slobodnadalmacija.hr`.
 
-- **Croatian news & media portals**
-  - `index.hr`, `jutarnji.hr`, `vecernji.hr`, `24sata.hr`, `net.hr`, `tportal.hr`, `rtl.hr`,
-    `telegram.hr`, `n1info.hr`, `dnevnik.hr` (NovaTV)
-- **Their first‑party ad / tracking subdomains**
-  - e.g. `adserver.index.hr`, `metrics.jutarnji.hr`, `ads.dnevnik.hr`, `adserver.dnevnik.hr`,  
-    `bijelojaje-widget.dnevnik.hr`, etc.
-- **External ad networks and trackers actually seen on Croatian portals**
-  - Google Ads / DoubleClick endpoints
-  - mainstream ad networks (Adform / OpenX / Teads / Ezoic / AppNexus / SmartAdServer / PubMatic / Rubicon / …)
-  - local/regional engagement & recommendation platforms (ContentExchange, Upscore, html-load, EBX, …)
+### 2. Regional Video & Rich-Media Frameworks
+- **Outstream Floating Video Ads**: `video.onnetwork.tv`, `cdn.onnetwork.tv`, `cdnt.onnetwork.tv` (used on Jutarnji, Net.hr).
+- **Full-Page Wallpaper / Takeover Ads**: `wrappio.dev`, `cdn.wrappio.dev` (used on Večernji, 24sata).
+- **Video Pre-roll & Mid-roll**: `videoads.dnevnik.hr` (NovaTV video player ads).
 
-The idea is to keep this list **small but high‑impact** – every entry here is based on
-real traffic from Croatian media sites.
+### 3. Domestic Analytics & Audience Measurement
+- **DotMetrics Network**: `script.dotmetrics.net` and the newer `dotmetrics.rocks` / `script.dotmetrics.rocks` endpoints.
+- **Audience & Telemetry**: `contentexchange.me`, `upscore.com` (`hit-pool.upscore.com`), `cdn.optmn.cloud`, `cme-api.bloomreach.co`, `smartocto.com`.
+- **E-Commerce / Retail Tracking**: `metrics.iponcomp.hr`.
+
+### 4. Anti-Adblock & Ad-Reinsertion Proxies
+- Blocks dynamic recovery proxies that attempt to reinject ads when standard networks are blocked: `silk.caringyarn.pro`, `btloader.com`, and `*.html-load.com`.
 
 ---
 
 ## Blocklist URL
 
-You can add this list directly to Pi‑hole (or any compatible DNS sinkhole) as an adlist:
+Add this URL into your Pi‑hole (**Adlists** / **Lists**) or AdGuard Home:
+
 ```text
 https://raw.githubusercontent.com/zruzic/pi-hole-lists/main/croatia-media-ads.txt
 ```
+
 ---
-## Recommended base blocklists
 
-This list is meant to be a regional supplement, not your only protection.
+## Recommended Base Setup
 
-My current base setup looks roughly like this:
+This regional list is meant to be a supplement. For full network-wide protection, pair it with these tested base blocklists:
 
-Hagezi popup ads – focused on aggressive popups / redirects
-
+#### 1. General & Malware Protection (HaGeZi)
 ```text
+# HaGeZi Multi PRO (Comprehensive ad, tracker & telemetry protection)
+https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt
+
+# HaGeZi Pop-Up Ads (Aggressive popups, push notifications & redirects)
 https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt
-```
 
-Hagezi TIF (Threat Intelligence Feeds) – malware / phishing / C2
-
-```text
+# HaGeZi TIF (Threat Intelligence Feeds – malware, phishing, C2)
 https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt
 ```
 
+#### 2. General Clean Lists (StevenBlack & Firebog)
+```text
+# StevenBlack Unified Hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
+# Firebog AdGuard DNS List
+https://v.firebog.net/hosts/AdguardDNS.txt
 
+# Firebog EasyList & EasyPrivacy
+https://v.firebog.net/hosts/Easylist.txt
+https://v.firebog.net/hosts/Easyprivacy.txt
+```
 
+---
 
+## Best Practices & Tips
 
+### DNS vs. In-Browser Filtering
+> [!TIP]
+> **DNS blockers (like Pi‑hole)** operate at the domain level. They successfully stop ad servers, tracking beacons, and video ad streams from downloading.  
+> However, Croatian portals heavily utilize **first-party native content** (e.g. *Index Oglasi* on `index.hr`, *Hanza Native Studio* on `jutarnji.hr`, and sponsored PR articles) that share the same domain and IP address as the news articles.  
+> To remove empty whitespace containers and collapse in-feed sponsored cards, pair your Pi-hole setup with a browser extension like **uBlock Origin** (enabling the built-in *Dandelion Sprout's Serbo-Croatian* filter).
+
+### Prevent Browsers from Bypassing Pi‑hole
+- **Chrome / Brave / Edge**: Verify in browser settings that **"Use secure DNS" (DoH)** is set to *Off* (or *"With your current service provider"*), so queries do not bypass Pi-hole over encrypted HTTPS.
+- **Apple Devices (Safari)**: Add `mask.icloud.com` and `mask-h2.icloud.com` to your Pi-hole blacklist. This signals Apple devices per official spec to disable iCloud Private Relay on your home network and use Pi-hole instead.
